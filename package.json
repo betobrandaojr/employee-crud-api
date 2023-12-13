@@ -2,14 +2,30 @@
   "name": "crud_node_angular_postgres",
   "version": "1.0.0",
   "description": "Aplicação CRUD API Node.js que alimentará os 4 principais frameworks do mercado.",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon",
+    "lint": "eslint --ext .js, -f ./node_modules/eslint-friendly-formatter . --fix",
+    "prepush": "npm run lint",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/betobrandaojr/employee-crud-api.git"
   },
+  "keywords": [
+    "nodejs",
+    "api",
+    "crud",
+    "azure-functions",
+    "express",
+    "github-actions",
+    "swa",
+    "servless",
+    "azure",
+    "postgres",
+    "sql"
+  ],
   "author": "Paulo Brandão",
   "license": "MIT",
   "bugs": {
@@ -24,6 +40,7 @@
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
+    "eslint-friendly-formatter": "^4.0.1",
     "express": "^4.18.2",
     "express-promise-router": "^4.1.1",
     "pg": "^8.11.3"
