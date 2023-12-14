@@ -32,14 +32,7 @@ exports.createEmployee = async (req, res) => {
 // ==> Método responsável por listar todos os 'Employees':
 exports.listAllEmployees = async (req, res) => {
   try {
-    const { rows } = await db.query(`SELECT 
-                                      employee_id,
-                                      name, 
-                                      job_role, 
-                                      salary, 
-                                      employee_registration, 
-                                      to_char(birth, 'yyyy-MM-dd') as birth 
-                                    FROM employee ORDER BY name asc`);
+    const { rows } = await db.query('SELECT * FROM employee ORDER BY name ASC');
     res.status(200).send(rows);
   } catch (error) {
     console.error('listAllEmployees', error);
