@@ -97,7 +97,7 @@ exports.updateEmployeeById = async (req, res) => {
   }
 };
 
-// ==> Método responsável por deletar um determinado 'Employee' por Id:
+// ==> Método responsável por deletar um determinado 'Employee' por Id :
 exports.deleteEmployeeById = async (req, res) => {
   const { id } = req.params;
   try {
