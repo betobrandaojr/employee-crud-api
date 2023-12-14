@@ -74,7 +74,7 @@ exports.findEmployeeById = async (req, res) => {
   }
 };
 
-// ==> Método responsável por atualizar um determinado 'Employee' por Id:
+// ==> Método responsável por atualizar um determinado 'Employee' por Id :
 exports.updateEmployeeById = async (req, res) => {
   const { id } = req.params;
   try {
