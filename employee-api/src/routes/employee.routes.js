@@ -19,7 +19,7 @@ router.get('/employees', employeeController.listAllEmployees);
 // ==> Rota responsável por listar um determinado 'Colaborador' por Id:(GET): localhost:3010/api/employees/:id
 router.get('/employees/:id', employeeController.findEmployeeById)
 
-// ==> Rota reponsável por atualizar um determinado 'Colaborador(a) por Id:(PUT): localhost:3010/api/employees/:id
+// ==> Rota reponsável por atualizar um determinado 'Colaborador(a) por Id:(PUT):localhost:3010/api/employees/:id
 router.put('/employees/:id', employeeController.updateEmployeeById)
 
 // ==> Rota responsável por deletar/excluir um determinado 'Colaborador(a) por Id: localhost:3010/api/employees/:id
